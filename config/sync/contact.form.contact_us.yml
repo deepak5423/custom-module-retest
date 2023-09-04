@@ -1,10 +1,8 @@
-uuid: 3f7c7ac4-44c8-4efb-94a8-92e700810476
+uuid: 03cbe3a5-7c1b-4ed0-be5c-8e307af87522
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
-id: feedback
+id: contact_us
 label: 'Contact Us'
 recipients:
   - deepak.pandey@innoraft.com

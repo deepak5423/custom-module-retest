@@ -213,12 +213,16 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: default
+        type: grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 4
+          automatic_width: true
+          alignment: vertical
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: 'entity:node'
         options:

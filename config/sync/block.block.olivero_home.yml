@@ -1,0 +1,25 @@
+uuid: a5594cd2-9774-421a-a947-ccf429055808
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.home
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_home
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:home'
+settings:
+  id: 'system_menu_block:home'
+  label: home
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

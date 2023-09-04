@@ -1,0 +1,20 @@
+uuid: 2f7d90da-44a1-4336-942f-96c4b4135a1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_node_view_count
+field_name: field_node_view_count
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

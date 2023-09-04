@@ -1,0 +1,23 @@
+uuid: 81b52f8d-7a02-4e47-b56e-51f140ab5352
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_pho
+id: contact_message.contact_us.field_pho
+field_name: field_pho
+entity_type: contact_message
+bundle: contact_us
+label: 'Phone Number'
+description: 'Phone Number'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 5000000000
+  max: 9999999999
+  prefix: ''
+  suffix: ''
+field_type: integer
