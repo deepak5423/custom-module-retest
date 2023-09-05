@@ -1,0 +1,24 @@
+uuid: 82553dc1-e389-47ce-ac19-a2acb3bf3fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - content_moderation
+    - field_permissions
+    - node
+    - toolbar
+id: reporter
+label: Reporter
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create field_api_key'
+  - 'create news content'
+  - 'edit any news content'
+  - 'edit own field_api_key'
+  - 'edit own news content'
+  - 'view any unpublished content'
+  - 'view own field_api_key'

@@ -1,0 +1,21 @@
+uuid: bd2b5439-8f56-4547-ad6d-a7559a4c2334
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.storage.block_content.sb_layout
+  module:
+    - options
+id: block_content.standard_banner.sb_layout
+field_name: sb_layout
+entity_type: block_content
+bundle: standard_banner
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,91 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_node_view().
+ */
+function news_content_management_node_view(&$node, $view_mode, $langcode) {
+  if ($view_mode->bundle() == 'news') {
+    $current_user = \Drupal::currentUser();
+    $user_roles = $current_user->getRoles();
+    if ($user_roles[0] == 'anonymous') {
+      $num = (int) $view_mode->get('field_node_view_count')->value;
+      $field_value = $num + 1;
+      $view_mode->set('field_node_view_count', $field_value);
+      $view_mode->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function news_content_management_form_node_news_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#validate'][] = 'news_content_management_validation';
+}
+
+/**
+ * Validates that the title and tags already exists in a same node.
+ *
+ * @param array $form
+ *   Instance of form builder array.
+ * @param Drupal\Core\Form\FormStateInterface $form_state
+ *   Provides an interface for an object containing the current state of a form.
+ */
+function news_content_management_validation(&$form, FormStateInterface $form_state) {
+  $title = $form_state->getValue('title')[0]['value'];
+  $tag = $form_state->getValue('field_tag')[0]['target_id'];
+  if (is_int($tag)) {
+    $node = \Drupal::entityTypeManager()->getStorage('node');
+    $result = $node->loadByProperties([
+      'title' => $title,
+      'field_tag' => $tag,
+    ]);
+    if ($result) {
+      $form_state->setErrorByName('title', t('Title with tag already exists'));
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ */
+function news_content_management_node_presave(NodeInterface $node) {
+  // Check if the node is being published.
+  if ($node->isNew() && $node->isPublished()) {
+    // Set the publish date to the current system date.
+    $current_time = \Drupal::time()->getCurrentTime();
+    $date = date('Y-m-d', $current_time);
+    $node->set('field_news_published_date', $date);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function news_content_management_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#submit'][] = 'news_content_management_custom_redirect_url';
+}
+
+/**
+ * It is used to change route to the desired page when hit the submit button.
+ *
+ * @param array $form
+ *   Instance of form builder array.
+ * @param Drupal\Core\Form\FormStateInterface $form_state
+ *   Provides an interface for an object containing the current state of a form.
+ */
+function news_content_management_custom_redirect_url(&$form, FormStateInterface $form_state) {
+  $roles = \Drupal::currentUser()->getRoles();
+  if (in_array('reporter', $roles)) {
+    $url = Url::fromUri('internal:/reporter-dashboard');
+    $form_state->setRedirectUrl($url);
+  }
+  elseif (in_array('editor', $roles)) {
+    $url = Url::fromUri('internal:/editor-dashboard');
+    $form_state->setRedirectUrl($url);
+  }
+}

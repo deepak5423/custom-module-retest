@@ -1,0 +1,22 @@
+uuid: bc3c963a-df6c-4d92-a1db-8b05007effdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.storage.block_content.sb_banner_a_caption
+  module:
+    - text
+id: block_content.standard_banner.sb_banner_a_caption
+field_name: sb_banner_a_caption
+entity_type: block_content
+bundle: standard_banner
+label: 'Banner A caption'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

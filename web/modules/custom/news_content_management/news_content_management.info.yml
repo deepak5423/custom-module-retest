@@ -1,0 +1,8 @@
+name: News Content Management
+description: News Content Management.
+package: CustomModule
+type: module
+dependencies:
+  - drupal:user
+  - drupal:node
+core_version_requirement: ^10

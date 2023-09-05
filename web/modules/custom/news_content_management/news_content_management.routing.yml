@@ -1,0 +1,17 @@
+news_content_management.node_fetch:
+  path: '/fetch/nodes'
+  defaults:
+    _controller: 'Drupal\news_content_management\Controller\Api::view'
+    _format: 'json'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+
+news_content_management.api_key:
+  path: 'admin/api'
+  defaults:
+    _form: 'Drupal\news_content_management\Form\ApiHeader'
+    _title: 'Block Form'
+  requirements:
+    _permission: 'access content'
+    _role: 'administrator'

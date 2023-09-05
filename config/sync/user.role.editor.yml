@@ -1,0 +1,37 @@
+uuid: 73229c7d-7bb5-4c9f-9caa-fedd4a7d6553
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+    - workflows.workflow.editorial
+    - workflows.workflow.news
+  module:
+    - content_moderation
+    - field_permissions
+    - node
+    - toolbar
+id: editor
+label: Editor
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create field_api_key'
+  - 'create field_featured'
+  - 'edit any news content'
+  - 'edit field_featured'
+  - 'edit own field_api_key'
+  - 'edit own field_featured'
+  - 'edit own news content'
+  - 'revert news revisions'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'use news transition create_new_draft'
+  - 'use news transition publish'
+  - 'view any unpublished content'
+  - 'view field_featured'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view own field_api_key'
+  - 'view own field_featured'

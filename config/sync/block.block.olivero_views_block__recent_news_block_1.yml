@@ -1,0 +1,24 @@
+uuid: 0d72d0f5-97d1-4593-8b50-fad5d1880d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_news
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__recent_news_block_1
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:recent_news-block_1'
+settings:
+  id: 'views_block:recent_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

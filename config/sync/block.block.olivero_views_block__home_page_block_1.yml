@@ -1,0 +1,29 @@
+uuid: ae5a4e72-ec9e-43a2-aded-de55811767bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__home_page_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:home_page-block_1'
+settings:
+  id: 'views_block:home_page-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /homepage
