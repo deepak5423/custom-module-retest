@@ -16,11 +16,15 @@ module:
   contact: 0
   content_moderation: 0
   contextual: 0
+  copyright_footer: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -29,6 +33,7 @@ module:
   image: 0
   link: 0
   maxlength: 0
+  media: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -38,9 +43,14 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  rest: 0
+  rest_api_authentication: 0
+  restui: 0
   search: 0
+  serialization: 0
   shortcut: 0
   smtp: 0
+  standard_banner: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -48,6 +58,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   workflows: 0
   views: 10

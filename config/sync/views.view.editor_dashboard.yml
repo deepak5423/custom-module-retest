@@ -215,6 +215,7 @@ display:
       menu:
         type: normal
         title: 'Editor Dashboard'
+        weight: -48
         menu_name: home
         parent: ''
     cache_metadata:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_featured
     - field.field.node.news.field_images
     - field.field.node.news.field_news_published_date
     - field.field.node.news.field_node_view_count
@@ -12,6 +13,7 @@ dependencies:
   module:
     - datetime
     - image
+    - options
     - text
     - user
 id: node.news.default
@@ -30,6 +32,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: -20
+    region: content
+  field_featured:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_images:
     type: image

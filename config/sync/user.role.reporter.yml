@@ -6,6 +6,7 @@ dependencies:
     - node.type.news
   module:
     - content_moderation
+    - field_permissions
     - node
     - toolbar
 id: reporter
@@ -14,7 +15,10 @@ weight: 4
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'create field_api_key'
   - 'create news content'
   - 'edit any news content'
+  - 'edit own field_api_key'
   - 'edit own news content'
   - 'view any unpublished content'
+  - 'view own field_api_key'

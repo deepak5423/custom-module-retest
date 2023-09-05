@@ -1,0 +1,257 @@
+uuid: 067b0b1e-6417-410a-82a6-c2685bcf2941
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.field.block_content.standard_banner.sb_banner_a_caption
+    - field.field.block_content.standard_banner.sb_banner_a_headline
+    - field.field.block_content.standard_banner.sb_banner_a_image
+    - field.field.block_content.standard_banner.sb_banner_a_url
+    - field.field.block_content.standard_banner.sb_banner_b_headline
+    - field.field.block_content.standard_banner.sb_banner_b_image
+    - field.field.block_content.standard_banner.sb_banner_b_url
+    - field.field.block_content.standard_banner.sb_banner_c_headline
+    - field.field.block_content.standard_banner.sb_banner_c_image
+    - field.field.block_content.standard_banner.sb_banner_c_url
+    - field.field.block_content.standard_banner.sb_banner_d_headline
+    - field.field.block_content.standard_banner.sb_banner_d_image
+    - field.field.block_content.standard_banner.sb_banner_d_url
+    - field.field.block_content.standard_banner.sb_banner_e_headline
+    - field.field.block_content.standard_banner.sb_banner_e_image
+    - field.field.block_content.standard_banner.sb_banner_e_url
+    - field.field.block_content.standard_banner.sb_banner_f_headline
+    - field.field.block_content.standard_banner.sb_banner_f_image
+    - field.field.block_content.standard_banner.sb_banner_f_url
+    - field.field.block_content.standard_banner.sb_banner_g_headline
+    - field.field.block_content.standard_banner.sb_banner_g_image
+    - field.field.block_content.standard_banner.sb_banner_g_url
+    - field.field.block_content.standard_banner.sb_layout
+  module:
+    - image
+    - link
+    - text
+id: block_content.standard_banner.default
+targetEntityType: block_content
+bundle: standard_banner
+mode: default
+content:
+  sb_banner_a_caption:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  sb_banner_a_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  sb_banner_a_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  sb_banner_a_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  sb_banner_b_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  sb_banner_b_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  sb_banner_b_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  sb_banner_c_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  sb_banner_c_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  sb_banner_c_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  sb_banner_d_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  sb_banner_d_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  sb_banner_d_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  sb_banner_e_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  sb_banner_e_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  sb_banner_e_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  sb_banner_f_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  sb_banner_f_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  sb_banner_f_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  sb_banner_g_headline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  sb_banner_g_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  sb_banner_g_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 22
+    region: content
+hidden:
+  sb_layout: true

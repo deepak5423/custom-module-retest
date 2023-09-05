@@ -1,0 +1,22 @@
+uuid: f1eaa174-5523-41b8-b331-e00c99c507fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.storage.block_content.sb_banner_a_headline
+  module:
+    - text
+id: block_content.standard_banner.sb_banner_a_headline
+field_name: sb_banner_a_headline
+entity_type: block_content
+bundle: standard_banner
+label: 'Banner A headline'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

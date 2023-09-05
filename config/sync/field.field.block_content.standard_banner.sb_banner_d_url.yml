@@ -1,0 +1,23 @@
+uuid: 8596fc8f-bdee-453f-8b33-75c67464d4c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.storage.block_content.sb_banner_d_url
+  module:
+    - link
+id: block_content.standard_banner.sb_banner_d_url
+field_name: sb_banner_d_url
+entity_type: block_content
+bundle: standard_banner
+label: 'Banner D url'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

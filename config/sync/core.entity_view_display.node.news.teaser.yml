@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_featured
     - field.field.node.news.field_images
     - field.field.node.news.field_news_published_date
     - field.field.node.news.field_node_view_count
@@ -19,12 +20,17 @@ bundle: news
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 100
     third_party_settings: {  }
     weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
     region: content
   links:
     settings: {  }
@@ -32,6 +38,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_featured: true
   field_images: true
   field_news_published_date: true
   field_node_view_count: true

@@ -1,0 +1,22 @@
+uuid: eee2184b-2ce1-4c55-89cb-81657367b97e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.storage.block_content.sb_banner_e_headline
+  module:
+    - text
+id: block_content.standard_banner.sb_banner_e_headline
+field_name: sb_banner_e_headline
+entity_type: block_content
+bundle: standard_banner
+label: 'Banner E headline'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

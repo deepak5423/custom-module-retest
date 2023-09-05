@@ -414,6 +414,7 @@ display:
       menu:
         type: normal
         title: 'Reporter Dashboard'
+        weight: -47
         menu_name: home
         parent: ''
     cache_metadata:

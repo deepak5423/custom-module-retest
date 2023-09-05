@@ -1,0 +1,19 @@
+uuid: 1f68f0e7-5e40-4027-9740-80169a21fe0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.sb_banner_c_url
+field_name: sb_banner_c_url
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

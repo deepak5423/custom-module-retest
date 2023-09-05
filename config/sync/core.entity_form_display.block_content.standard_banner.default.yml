@@ -1,0 +1,230 @@
+uuid: 8bb43780-a5fe-4cb3-98de-a9608b2b0931
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.standard_banner
+    - field.field.block_content.standard_banner.sb_banner_a_caption
+    - field.field.block_content.standard_banner.sb_banner_a_headline
+    - field.field.block_content.standard_banner.sb_banner_a_image
+    - field.field.block_content.standard_banner.sb_banner_a_url
+    - field.field.block_content.standard_banner.sb_banner_b_headline
+    - field.field.block_content.standard_banner.sb_banner_b_image
+    - field.field.block_content.standard_banner.sb_banner_b_url
+    - field.field.block_content.standard_banner.sb_banner_c_headline
+    - field.field.block_content.standard_banner.sb_banner_c_image
+    - field.field.block_content.standard_banner.sb_banner_c_url
+    - field.field.block_content.standard_banner.sb_banner_d_headline
+    - field.field.block_content.standard_banner.sb_banner_d_image
+    - field.field.block_content.standard_banner.sb_banner_d_url
+    - field.field.block_content.standard_banner.sb_banner_e_headline
+    - field.field.block_content.standard_banner.sb_banner_e_image
+    - field.field.block_content.standard_banner.sb_banner_e_url
+    - field.field.block_content.standard_banner.sb_banner_f_headline
+    - field.field.block_content.standard_banner.sb_banner_f_image
+    - field.field.block_content.standard_banner.sb_banner_f_url
+    - field.field.block_content.standard_banner.sb_banner_g_headline
+    - field.field.block_content.standard_banner.sb_banner_g_image
+    - field.field.block_content.standard_banner.sb_banner_g_url
+    - field.field.block_content.standard_banner.sb_layout
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.standard_banner.default
+targetEntityType: block_content
+bundle: standard_banner
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_a_caption:
+    type: text_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_a_headline:
+    type: text_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_a_image:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_a_url:
+    type: link_default
+    weight: 30
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_b_headline:
+    type: text_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_b_image:
+    type: image_image
+    weight: 31
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_b_url:
+    type: link_default
+    weight: 33
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_c_headline:
+    type: text_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_c_image:
+    type: image_image
+    weight: 34
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_c_url:
+    type: link_default
+    weight: 36
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_d_headline:
+    type: text_textfield
+    weight: 38
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_d_image:
+    type: image_image
+    weight: 37
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_d_url:
+    type: link_default
+    weight: 39
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_e_headline:
+    type: text_textfield
+    weight: 41
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_e_image:
+    type: image_image
+    weight: 40
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_e_url:
+    type: link_default
+    weight: 42
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_f_headline:
+    type: text_textfield
+    weight: 44
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_f_image:
+    type: image_image
+    weight: 43
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_f_url:
+    type: link_default
+    weight: 45
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_banner_g_headline:
+    type: text_textfield
+    weight: 47
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sb_banner_g_image:
+    type: image_image
+    weight: 46
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  sb_banner_g_url:
+    type: link_default
+    weight: 48
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  sb_layout:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
